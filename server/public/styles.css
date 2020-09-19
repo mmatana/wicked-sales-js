@@ -1,5 +1,6 @@
 img {
   object-fit: scale-down;
+  width: 90%;
 }
 
 .card {
