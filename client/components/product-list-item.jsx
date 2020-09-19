@@ -6,7 +6,7 @@ export default class ProductListItem extends React.Component {
     var total = (this.props.product.price / 100).toFixed(2);
     return <>
       <div className="col mb-4">
-        <div className="card" style={{ width: '20rem' }}>
+        <div className="card" style={{ width: '20rem' }} onClick={this.props.view} id={this.props.product.productId}>
           <img src={this.props.product.image} className="card-img-top"></img>
           <div className="card-body">
             <h5 className="card-title">{this.props.product.name}</h5>
